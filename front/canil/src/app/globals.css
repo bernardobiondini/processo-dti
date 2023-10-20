@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #212121;
+  --pink: #E31C79;
+  --purple: #512D6D;
+  --blue: #018292;
+  --orange: #F06400;
+  --gray: #c5c5c5;
+  --white: #f0f0f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: var(--background);
+}
+
+h1 {
+  color: var(--pink);
+}
+
+h2 {
+  color: var(--orange);
+}
+
+thead {
+  background-color: var(--white);
+  color: #212121;
+}
+
+tbody {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+label {
+  color: var(--blue);
+}
+
+.info {
+  color: var(--white);
+}
+
+.error {
+  color: var(--orange);
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: var(--purple);
+  color: var(--pink);
+
+  font-weight: bold;
+
+}
