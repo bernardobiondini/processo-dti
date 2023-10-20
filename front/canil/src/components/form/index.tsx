@@ -24,7 +24,7 @@ export default function FormDogs() {
     const handleSubmit = async () => {
         let queryDate = date.replace(/\//g, "-");
         try {
-            const result = await axios.get('https://localhost:7289/api/best-option?date=20-10-2023&smallDogs=1&largeDogs=1');
+            const result = await axios.get('https://localhost:7289/api/best-option?date=' + queryDate + '&smallDogs=' + numberSmDogs + '&largeDogs=' + numberLgDogs);
 
             setResponse(result.data);
         } catch (error: any) {
